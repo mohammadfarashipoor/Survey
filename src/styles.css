@@ -1,0 +1,117 @@
+* {
+  font-family: "Mirza";
+  direction: rtl;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  background-color: #030638;
+}
+.box {
+  background-color: #ffff;
+  padding: 30px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  box-shadow: 4px 4px 5px 3px #9b9b9b;
+}
+.box > p:nth-child(1) {
+  font-size: 20px;
+}
+.box > p:nth-child(2) {
+  font-size: 15px;
+  color: rgb(150, 148, 148);
+}
+.bottom {
+  position: relative;
+  text-decoration: none;
+  padding: 8px 8px 15px 8px;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.bottombg {
+  background-color: rgb(59, 59, 246);
+}
+.bottombg1 {
+  background-color: rgb(156, 156, 241);
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-enter-active {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-exit-active {
+  transition: opacity 500ms;
+}
+/* button effect*/
+.menu,
+.menu .menu_title,
+.menu ul li button,
+.menu ul li button:after,
+.menu ul li button:before {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.menu {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid #fff;
+  margin: 0;
+  padding: 60px 0;
+}
+
+.menu .menu_title {
+  color: #ccc;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+.menu:hover .menu_title {
+  color: #0af;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.menu ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li button {
+  color: #555;
+  display: block;
+  line-height: 50px;
+  padding: 0 30px;
+  text-decoration: none;
+  border: 2px solid rgb(247, 247, 247);
+  margin: 10px;
+}
+/**/
+.menu.effect-02 ul li button:hover {
+  background: rgba(136, 0, 68, 0.2);
+  border: 2px solid rgba(136, 0, 68, 0.2);
+  border-radius: 25px;
+  cursor: pointer;
+}
+#active > button {
+  background: rgba(136, 0, 68, 0.2);
+  border-radius: 25px;
+  border: 2px solid rgba(94, 4, 49, 0.2) !important;
+}
